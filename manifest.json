@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Local Podio",
-  "description": "This extension customize Podio experience in Local Tobacco",
+  "description": "This extension customizes Podio experience in Local Tobacco",
   "version": "1.0",
 
   "content_scripts": [{
