@@ -1,0 +1,65 @@
+@-moz-document domain('podio.com') {
+html {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif!important;
+}
+
+div.frame-label {
+  padding-top: 15px!important;
+  padding-bottom: 15px!important;
+}
+
+div.frame-content {
+  padding-top: 10px!important;
+  padding-bottom: 10px!important;
+}
+
+li[id*="field"] {
+  margin-top: 10px!important;
+  background-color: #777!important;
+  line-height: 1!important;
+  font-size: 12px!important;
+}
+
+li[id*="field"] h1 {
+  color: #ffffff!important;
+  margin-bottom: 0!important;
+  letter-spacing: .25px!important;
+  text-transform: uppercase!important;
+  font-size: 12px!important;
+}
+
+li[id*="field"] .frame-label {
+  background-color: #777!important;
+  color: #777!important;
+  border: none!important;
+}
+
+li[id*="field"] hr {
+  display: none!important;
+}
+
+.category-field .value li {
+  padding: 5px 10px!important;
+  font-size: 10px!important;
+  font-weight: bold!important;
+  text-transform: uppercase!important;
+}
+
+.category-field-value-component>div {
+  font-weight: bold!important;
+  font-size: 10px!important;
+  text-transform: uppercase!important;
+}
+
+.header-sub-title, .header-title, .sub-navigation .tabs ul>li h5 {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif!important;
+}
+
+.fc-time {
+  display: none!important;
+}
+
+.fc-title {
+  font-weight: normal!important;
+}
+}
