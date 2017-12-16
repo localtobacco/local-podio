@@ -24,6 +24,10 @@ html {
   height: 16px !important;
   width: 16px !important;
 }
+.app-breakdown-component__item .app-breakdown-component__link:focus, .app-breakdown-component__item.is-selected:last-child>.app-breakdown-component__link, .app-breakdown-component__item.is-selected>.app-breakdown-component__link {
+  padding: 4px 25px 3px !important;
+  margin: -1px 0 0;
+}
 
 /*------------------------------------*\
   Fields
