@@ -1,13 +1,18 @@
 {
   "manifest_version": 2,
 
-  "name": "Local Podio",
+  "name": "Podio for Local Tobacco",
+  "short_name": "Local Podio",
   "description": "This extension customizes Podio experience in Local Tobacco",
-  "version": "1.0",
+  "version": "1.1",
+
+  "icons": { "16": "icon16.png",
+             "48": "icon48.png",
+            "128": "icon128.png" },
 
   "content_scripts": [{
     "matches": ["https://podio.com/*"],
     "css": ["style.css"],
-    "js": ["podio.js"]
+    "js": ["script.js"]
   }]
 }

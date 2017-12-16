@@ -1,24 +1,66 @@
+/*------------------------------------*\
+  General
+\*------------------------------------*/
 html {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif!important;
 }
 
-div.frame-label {
-  padding-top: 15px!important;
-  padding-bottom: 15px!important;
+/*------------------------------------*\
+  Sidebar
+\*------------------------------------*/
+.app-view-component .app-views-list__name {
+  font-weight: bold !important;
+  text-transform: uppercase;
+  font-size: 11px !important;
+}
+.app-breakdown-component__link {
+  padding: 4px 0 3px !important;
+}
+.app-breakdown-component__name {
+  font-size: 12px !important;
+}
+.app-breakdown-component__item .img--avatar {
+  margin: 0 10px 0 0 !important;
+  height: 16px !important;
+  width: 16px !important;
 }
 
+/*------------------------------------*\
+  Fields
+\*------------------------------------*/
+
+/* Left Section */
+li>.frame-wrapper>.frame-label .label-content {
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 29px;
+}
+
+/* Left Heading Section */
+div.frame-label {
+  padding-top: 10px!important;
+  padding-bottom: 10px!important;
+}
+li[id*="field"] .frame-label {
+  background-color: #777!important;
+  color: #777!important;
+  border: none!important;
+}
+li[id*="field"] .frame-label .label-content{
+  line-height: 1;
+}
+
+/* Right Heading Section */
 div.frame-content {
   padding-top: 10px!important;
   padding-bottom: 10px!important;
 }
-
 li[id*="field"] {
   margin-top: 10px!important;
   background-color: #777!important;
   line-height: 1!important;
   font-size: 12px!important;
 }
-
 li[id*="field"] h1 {
   color: #ffffff!important;
   margin-bottom: 0!important;
@@ -26,24 +68,20 @@ li[id*="field"] h1 {
   text-transform: uppercase!important;
   font-size: 12px!important;
 }
-
-li[id*="field"] .frame-label {
-  background-color: #777!important;
-  color: #777!important;
-  border: none!important;
-}
-
 li[id*="field"] hr {
   display: none!important;
 }
+li[id*="field"] .frame-content .value {
+  padding: 0 5px !important;
+}
 
+/* Category Field */
 .category-field .value li {
   padding: 5px 10px!important;
   font-size: 10px!important;
   font-weight: bold!important;
   text-transform: uppercase!important;
 }
-
 .category-field-value-component>div {
   font-weight: bold!important;
   font-size: 10px!important;
@@ -54,10 +92,64 @@ li[id*="field"] hr {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif!important;
 }
 
+/*------------------------------------*\
+  Calendar View
+\*------------------------------------*/
 .fc-time {
   display: none!important;
 }
-
 .fc-title {
   font-weight: normal!important;
+}
+.fullcalendar-header .left h2 {
+  vertical-align: baseline !important;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+td.fc-widget-header thead th {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: bold ;
+}
+td.fc-widget-header thead {
+  height: 25px;
+  line-height: 25px;
+}
+.fc-basic-view td.fc-day-number {
+  font-size: 9px !important;
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif!important;
+  line-height: 1;
+  font-weight: bold;
+}
+
+/*------------------------------------*\
+  Card View
+\*------------------------------------*/
+
+/* Column Header */
+.items-card>.scrollable .floating .floating-scrollable .inner>div {
+  text-transform: uppercase;
+  font-size: 11px !important;
+}
+
+/* Row Header */
+.items-card>.scrollable>table>tbody .card-group-heading {
+  font-size: 11px !important;
+  text-transform: uppercase;
+}
+
+/* Card Component */
+.small-text-field-value-component__label {
+  display: none;
+}
+.card-component .app-card-content .small-text-field-value-component p {
+  text-align: left;
+  font-size: 12px;
+}
+.card-component .app-card-header {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif!important;
+  font-size: 10px !important;
+  border-bottom: 1px solid #e9e9e9;
+  margin-bottom: 10px;
 }
