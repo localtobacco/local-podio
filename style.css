@@ -2,8 +2,13 @@
   General
 \*------------------------------------*/
 html {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif!important;
-}
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif !important; }
+
+html #header-global .nav-box > .inner .logo {
+  width: 132px !important; }
+  html #header-global .nav-box > .inner .logo .logo-img {
+    top: 47% !important;
+    display: none; }
 
 /*------------------------------------*\
   Sidebar
@@ -11,149 +16,259 @@ html {
 .app-view-component .app-views-list__name {
   font-weight: bold !important;
   text-transform: uppercase;
-  font-size: 11px !important;
-}
+  font-size: 11px !important; }
+
 .app-breakdown-component__link {
-  padding: 4px 0 3px !important;
-}
+  padding: 4px 0 3px !important; }
+
 .app-breakdown-component__name {
-  font-size: 12px !important;
-}
+  font-size: 12px !important; }
+
 .app-breakdown-component__item .img--avatar {
   margin: 0 10px 0 0 !important;
   height: 16px !important;
-  width: 16px !important;
-}
-.app-breakdown-component__item .app-breakdown-component__link:focus, .app-breakdown-component__item.is-selected:last-child>.app-breakdown-component__link, .app-breakdown-component__item.is-selected>.app-breakdown-component__link {
+  width: 16px !important; }
+
+.app-breakdown-component__item .app-breakdown-component__link:focus, .app-breakdown-component__item.is-selected:last-child > .app-breakdown-component__link, .app-breakdown-component__item.is-selected > .app-breakdown-component__link {
   padding: 4px 25px 3px !important;
-  margin: -1px 0 0;
-}
+  margin: -1px 0 0; }
 
 /*------------------------------------*\
-  Fields
+  Item View
 \*------------------------------------*/
-
-/* Left Section */
-li>.frame-wrapper>.frame-label .label-content {
-  text-transform: uppercase;
-  font-size: 10px;
-  line-height: 29px;
-}
-
-/* Left Heading Section */
-div.frame-label {
-  padding-top: 10px!important;
-  padding-bottom: 10px!important;
-}
-li[id*="field"] .frame-label {
-  background-color: #777!important;
-  color: #777!important;
-  border: none!important;
-}
-li[id*="field"] .frame-label .label-content{
+.items-section .content-row li .frame-label {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important; }
+  .items-section .content-row li .frame-label .label-content {
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 29px; }
+.items-section .content-row li .frame-content {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important; }
+.items-section .content-row li[id*="field"] {
+  margin-top: 10px !important;
+  background-color: #777 !important;
+  line-height: 1 !important;
+  font-size: 12px !important; }
+  .items-section .content-row li[id*="field"] .frame-label {
+    background-color: #777 !important;
+    color: #777 !important;
+    border: none !important; }
+    .items-section .content-row li[id*="field"] .frame-label .label-content {
+      text-transform: uppercase;
+      font-size: 10px;
+      line-height: 1; }
+  .items-section .content-row li[id*="field"] .frame-content h1, .items-section .content-row li[id*="field"] .frame-content h2 {
+    color: #ffffff !important;
+    margin-bottom: 0 !important;
+    letter-spacing: 0.25px !important;
+    text-transform: uppercase !important;
+    font-size: 11px !important; }
+  .items-section .content-row li[id*="field"] .frame-content hr {
+    display: none !important; }
+  .items-section .content-row li[id*="field"] .frame-content .value {
+    padding: 0 5px !important; }
+.items-section .content-row li.category-field .value li {
+  padding: 5px 10px !important;
+  font-size: 10px !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important; }
+.items-section .content-row li.category-field .frame-content {
+  padding-bottom: 2px !important; }
+.items-section .content-row li.date-field .frame-label .label-content {
+  padding-top: 0 !important; }
+.items-section .content-row li.date-field .value {
+  padding: 0 !important; }
+  .items-section .content-row li.date-field .value .field-date-display {
+    padding: 0 !important; }
+    .items-section .content-row li.date-field .value .field-date-display .datetime .badge, .items-section .content-row li.date-field .value .field-date-display .datetime .month, .items-section .content-row li.date-field .value .field-date-display .datetime .sep {
+      line-height: 30px;
+      height: 30px; }
+    .items-section .content-row li.date-field .value .field-date-display .datetime .badge .weekday {
+      font-size: 10px;
+      text-transform: uppercase;
+      font-weight: bold; }
+    .items-section .content-row li.date-field .value .field-date-display .datetime .badge .day {
+      font-size: 16px;
+      font-weight: bold; }
+  .items-section .content-row li.date-field .value .blank-placeholder {
+    line-height: 30px !important; }
+.items-section .content-row li.contact-field .contact-list .contact-card .image-block .img {
+  padding: 3px 0 3px 5px; }
+  .items-section .content-row li.contact-field .contact-list .contact-card .image-block .img img {
+    height: 30px;
+    width: 30px;
+    margin: 0; }
+.items-section .content-row li.contact-field .contact-list .contact-card .image-block .arrow {
+  height: 36px; }
+  .items-section .content-row li.contact-field .contact-list .contact-card .image-block .arrow .arrow-icon {
+    margin-top: 10px; }
+.items-section .content-row li.contact-field .contact-list .contact-card .image-block .details {
+  height: auto; }
+  .items-section .content-row li.contact-field .contact-list .contact-card .image-block .details h4 {
+    font-size: 11px;
+    margin-bottom: 0; }
+  .items-section .content-row li.contact-field .contact-list .contact-card .image-block .details .secondary {
+    display: none; }
+.items-section .content-row li.app-field .relationship-badge-component .relationship-badge-component__title {
+  padding: 5px !important;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif !important;
+  font-size: 12px; }
+.items-section .content-row li.app-field .relationship-badge-component .relationship-badge-component__details_group {
+  padding: 0 8px;
+  margin-top: 5px; }
+.items-section .content-row .files-list .file-field-group-component {
+  margin-bottom: 10px; }
+  .items-section .content-row .files-list .file-field-group-component .file-field-group-component__title {
+    margin-bottom: 10px;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: bold; }
+.items-section .content-row .files-list .file-field-list-component__file {
+  margin-bottom: 10px; }
+.items-section .content-row .files-list .file-field-item-component__title {
+  font-size: 12px !important;
+  line-height: 1; }
+.items-section .content-row .files-list .file-field-item-component__details {
+  font-size: 12px;
   line-height: 1;
-}
+  margin-bottom: 6px; }
+.items-section .content-row .files-list .file-field-item-component__actions {
+  font-size: 12px;
+  line-height: 1; }
+.items-section .content-row .files-list .file-field-item-component__thumbnail {
+  height: 50px !important;
+  width: 50px !important; }
 
-/* Right Heading Section */
-div.frame-content {
-  padding-top: 10px!important;
-  padding-bottom: 10px!important;
-}
-li[id*="field"] {
-  margin-top: 10px!important;
-  background-color: #777!important;
-  line-height: 1!important;
-  font-size: 12px!important;
-}
-li[id*="field"] h1 {
-  color: #ffffff!important;
-  margin-bottom: 0!important;
-  letter-spacing: .25px!important;
-  text-transform: uppercase!important;
-  font-size: 12px!important;
-}
-li[id*="field"] hr {
-  display: none!important;
-}
-li[id*="field"] .frame-content .value {
-  padding: 0 5px !important;
-}
+.tasks-list {
+  font-size: 11px;
+  font-weight: bold; }
+  .tasks-list .task-list li {
+    height: 40px !important;
+    line-height: 40px !important; }
+    .tasks-list .task-list li .inner {
+      height: 40px !important; }
+      .tasks-list .task-list li .inner .avatar img {
+        height: 24px !important;
+        width: 24px !important; }
 
-/* Category Field */
-.category-field .value li {
-  padding: 5px 10px!important;
-  font-size: 10px!important;
-  font-weight: bold!important;
-  text-transform: uppercase!important;
-}
-.category-field-value-component>div {
-  font-weight: bold!important;
-  font-size: 10px!important;
-  text-transform: uppercase!important;
-}
+.category-field-value-component > div {
+  font-weight: bold !important;
+  font-size: 10px !important;
+  text-transform: uppercase !important; }
 
-.header-sub-title, .header-title, .sub-navigation .tabs ul>li h5 {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif!important;
-}
+.header-sub-title, .header-title, .sub-navigation .tabs ul > li h5 {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif !important !important;
+  font-size: 12px !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important; }
+
+.activity-groups-compact .activity-group {
+  margin: 0 20px !important;
+  padding: 10px 0 !important;
+  width: auto !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03) !important; }
 
 /*------------------------------------*\
   Calendar View
 \*------------------------------------*/
 .fc-time {
-  display: none!important;
-}
+  display: none !important; }
+
 .fc-title {
-  font-weight: normal!important;
-}
+  font-weight: normal !important; }
+
 .fullcalendar-header .left h2 {
   vertical-align: baseline !important;
   font-weight: bold;
   font-size: 14px;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
+
 td.fc-widget-header thead th {
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: bold ;
-}
+  font-weight: bold; }
+
 td.fc-widget-header thead {
   height: 25px;
-  line-height: 25px;
-}
+  line-height: 25px; }
+
 .fc-basic-view td.fc-day-number {
   font-size: 9px !important;
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif!important;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif !important;
   line-height: 1;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 /*------------------------------------*\
   Card View
 \*------------------------------------*/
-
 /* Column Header */
-.items-card>.scrollable .floating .floating-scrollable .inner>div {
+.items-card > .scrollable .floating .floating-scrollable .inner > div {
   text-transform: uppercase;
-  font-size: 11px !important;
-}
+  font-size: 11px !important; }
 
 /* Row Header */
-.items-card>.scrollable>table>tbody .card-group-heading {
+.items-card > .scrollable > table > tbody .card-group-heading {
   font-size: 11px !important;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 /* Card Component */
-.small-text-field-value-component__label {
-  display: none;
-}
-.card-component .app-card-content .small-text-field-value-component p {
-  text-align: left;
-  font-size: 12px;
-}
-.card-component .app-card-header {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif!important;
-  font-size: 10px !important;
+.apps .card-component .app-card-header {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+  font-size: 11px;
   border-bottom: 1px solid #e9e9e9;
   margin-bottom: 10px;
-}
+  padding: 10px; }
+
+.apps .card-component .app-card-header div {
+  font-size: 11px; }
+
+.small-text-field-value-component__label {
+  display: none; }
+
+.card-component .app-card-content .small-text-field-value-component p {
+  text-align: left;
+  font-size: 12px; }
+
+/*------------------------------------*\
+  Badge View
+\*------------------------------------*/
+/* Badge Header */
+.apps .badge-component .app-badge-header {
+  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+  font-weight: 600;
+  padding: 10px; }
+
+/* Badge Content */
+.apps .badge-component .app-badge-content {
+  height: 100px; }
+
+/*.apps .badge-component .app-badge-content:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 25px;
+  background: linear-gradient(to bottom,rgba(246,246,246,0) 0,#f6f6f6 100%);
+}*/
+/*.apps .small-text-field-value-component__content p {
+  text-align: left;
+  padding: 10px;
+  height: 100px;
+  max-height: none;
+  margin: 10px;
+  padding: 0;
+}*/
+.apps .large-text-field-value-component {
+  padding: 10px;
+  height: 100px; }
+
+.apps .badge-component > section {
+  padding: 10px; }
+
+.apps .plain-field-value-component .empty-field {
+  text-align: left; }
+
+/*# sourceMappingURL=style.css.map */
