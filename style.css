@@ -2,7 +2,8 @@
   General
 \*------------------------------------*/
 html {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif !important; }
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif !important;
+  font-size: 14px; }
 
 html #header-global .nav-box > .inner .logo {
   width: 132px !important; }
@@ -27,7 +28,8 @@ html #header-global .nav-box > .inner .logo {
 .app-breakdown-component__item .img--avatar {
   margin: 0 10px 0 0 !important;
   height: 16px !important;
-  width: 16px !important; }
+  width: 16px !important;
+  flex: 0 1 16px !important; }
 
 .app-breakdown-component__item .app-breakdown-component__link:focus, .app-breakdown-component__item.is-selected:last-child > .app-breakdown-component__link, .app-breakdown-component__item.is-selected > .app-breakdown-component__link {
   padding: 4px 25px 3px !important;
@@ -42,7 +44,8 @@ html #header-global .nav-box > .inner .logo {
   .items-section .content-row li .frame-label .label-content {
     text-transform: uppercase;
     font-size: 10px;
-    line-height: 29px; }
+    line-height: 1.2;
+    margin-top: 9px; }
 .items-section .content-row li .frame-content {
   padding-top: 10px !important;
   padding-bottom: 10px !important; }
@@ -58,7 +61,8 @@ html #header-global .nav-box > .inner .logo {
     .items-section .content-row li[id*="field"] .frame-label .label-content {
       text-transform: uppercase;
       font-size: 10px;
-      line-height: 1; }
+      line-height: 1;
+      margin-top: 0; }
   .items-section .content-row li[id*="field"] .frame-content h1, .items-section .content-row li[id*="field"] .frame-content h2 {
     color: #ffffff !important;
     margin-bottom: 0 !important;
@@ -115,6 +119,8 @@ html #header-global .nav-box > .inner .logo {
   padding: 5px !important;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif !important;
   font-size: 12px; }
+  .items-section .content-row li.app-field .relationship-badge-component .relationship-badge-component__title .small-text-field-value-component__label {
+    display: none; }
 .items-section .content-row li.app-field .relationship-badge-component .relationship-badge-component__details_group {
   padding: 0 8px;
   margin-top: 5px; }
@@ -170,6 +176,20 @@ html #header-global .nav-box > .inner .logo {
   width: auto !important;
   border-bottom: 1px solid rgba(0, 0, 0, 0.03) !important; }
 
+.markdown table thead tr th {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  font-size: 10px !important;
+  text-transform: uppercase !important;
+  font-weight: bold !important; }
+.markdown table tbody tr td {
+  padding: 2.5px 0; }
+
+.markdown hr {
+  border: none;
+  margin: 5px 0;
+  border-bottom: 1px solid #e9e9e9; }
+
 /*------------------------------------*\
   Calendar View
 \*------------------------------------*/
@@ -216,51 +236,78 @@ td.fc-widget-header thead {
 /* Card Component */
 .apps .card-component .app-card-header {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-  font-size: 11px;
+  text-transform: uppercase;
   border-bottom: 1px solid #e9e9e9;
   margin-bottom: 10px;
   padding: 10px; }
-
-.apps .card-component .app-card-header div {
-  font-size: 11px; }
-
-.small-text-field-value-component__label {
-  display: none; }
-
-.card-component .app-card-content .small-text-field-value-component p {
-  text-align: left;
-  font-size: 12px; }
+  .apps .card-component .app-card-header div {
+    font-size: 11px; }
+  .apps .card-component .app-card-header .small-text-field-value-component__label {
+    display: none; }
+.apps .card-component .app-card-content {
+  text-align: left !important;
+  font-size: 12px !important;
+  border-bottom: 1px solid #e9e9e9;
+  padding-bottom: 10px; }
+  .apps .card-component .app-card-content .large-text-field-value-component {
+    width: 100%; }
+  .apps .card-component .app-card-content .small-text-field-value-component {
+    padding: 0 10px; }
+    .apps .card-component .app-card-content .small-text-field-value-component p {
+      text-align: left;
+      font-size: 12px;
+      line-height: 1.5;
+      max-height: none;
+      -webkit-line-clamp: 3; }
+  .apps .card-component .app-card-content .calculation-field-value-component {
+    width: 100%; }
+    .apps .card-component .app-card-content .calculation-field-value-component .small-text-field-value-component {
+      padding: 0 10px;
+      white-space: normal;
+      width: 100%; }
+      .apps .card-component .app-card-content .calculation-field-value-component .small-text-field-value-component p {
+        text-align: left;
+        font-size: 12px;
+        line-height: 1.5;
+        max-height: none;
+        -webkit-line-clamp: 3; }
+      .apps .card-component .app-card-content .calculation-field-value-component .small-text-field-value-component .small-text-field-value-component__label {
+        display: none; }
+.apps .card-component > section {
+  padding: 8px 10px; }
 
 /*------------------------------------*\
   Badge View
 \*------------------------------------*/
 /* Badge Header */
 .apps .badge-component .app-badge-header {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-  font-weight: 600;
   padding: 10px; }
-
-/* Badge Content */
+  .apps .badge-component .app-badge-header div {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px; }
+  .apps .badge-component .app-badge-header .calculation-field-value-component .small-text-field-value-component .small-text-field-value-component__label {
+    display: none; }
 .apps .badge-component .app-badge-content {
-  height: 100px; }
-
-/*.apps .badge-component .app-badge-content:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 25px;
-  background: linear-gradient(to bottom,rgba(246,246,246,0) 0,#f6f6f6 100%);
-}*/
-/*.apps .small-text-field-value-component__content p {
-  text-align: left;
-  padding: 10px;
   height: 100px;
-  max-height: none;
-  margin: 10px;
-  padding: 0;
-}*/
+  align-items: flex-start; }
+  .apps .badge-component .app-badge-content .calculation-field-value-component {
+    width: 100%; }
+    .apps .badge-component .app-badge-content .calculation-field-value-component .small-text-field-value-component {
+      padding: 10px;
+      white-space: normal;
+      width: 100%; }
+      .apps .badge-component .app-badge-content .calculation-field-value-component .small-text-field-value-component p {
+        text-align: left;
+        font-size: 12px;
+        line-height: 1.5;
+        max-height: none;
+        -webkit-line-clamp: 3;
+        padding: 0; }
+      .apps .badge-component .app-badge-content .calculation-field-value-component .small-text-field-value-component .small-text-field-value-component__label {
+        display: none; }
+
 .apps .large-text-field-value-component {
   padding: 10px;
   height: 100px; }
@@ -269,6 +316,7 @@ td.fc-widget-header thead {
   padding: 10px; }
 
 .apps .plain-field-value-component .empty-field {
-  text-align: left; }
+  text-align: left;
+  font-size: 12px; }
 
 /*# sourceMappingURL=style.css.map */

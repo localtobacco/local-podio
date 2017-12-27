@@ -10,62 +10,8 @@ $dark: #444;
 \*------------------------------------*/
 html {
   font-family: $font;
+  font-size: 14px;
 }
-
-// a {
-//   color: $brand-color !important;
-//   &:active,
-//   &:link,
-//   &:visited {
-//     color: $brand-color-dark !important;
-//   }
-// }
-
-// #header-global {
-//   background: $dark !important;
-//   border-bottom-color: $darker !important;
-//   .podio-search-box {
-//     background: $dark !important;
-//     border-bottom: $darker !important;
-//     &:hover {
-//       background-color: $darker !important;
-//     }
-//     &.expanded {
-//       background: $darker !important;
-//       border-bottom: $darker !important;
-//     }
-//     &.podio-help {
-//       border-bottom: $darker !important;
-//     }
-//     .form input {
-//       font-size: 12px !important;
-//     }
-//   }
-// }
-
-// .space-switcher-wrapper.highlight {
-//   background: $darker !important;
-// }
-
-// html #header-global .nav-box>.inner .user-functions {
-//   background: linear-gradient(to right,rgba(68,68,68,0),$dark 10px) !important;
-// }
-// .icon-16,
-// .icon-nav {
-//   filter: grayscale(1) brightness(2);
-// }
-
-// #header-global .nav-box>.inner .user-navigation>li>a:focus,
-// #header-global .nav-box>.inner .user-navigation>li>a:hover {
-//   background-color: $darker !important;
-// }
-
-// #header-global .nav-box>.inner .logo:focus,
-// #header-global .nav-box>.inner .logo:hover,
-// #header-global .nav-box>.inner .navigation-link>a:focus,
-// #header-global .nav-box>.inner .navigation-link>a:hover {
-//   background-color: $darker !important;
-// }
 
 html #header-global .nav-box>.inner .logo {
   width: 132px !important;
@@ -93,6 +39,7 @@ html #header-global .nav-box>.inner .logo {
   margin: 0 10px 0 0 !important;
   height: 16px !important;
   width: 16px !important;
+  flex: 0 1 16px !important;
 }
 .app-breakdown-component__item .app-breakdown-component__link:focus, .app-breakdown-component__item.is-selected:last-child>.app-breakdown-component__link, .app-breakdown-component__item.is-selected>.app-breakdown-component__link {
   padding: 4px 25px 3px !important;
@@ -112,7 +59,8 @@ html #header-global .nav-box>.inner .logo {
         .label-content {
           text-transform: uppercase;
           font-size: 10px;
-          line-height: 29px;
+          line-height: 1.2;
+          margin-top: 9px;
         }
       }
       .frame-content {
@@ -134,6 +82,7 @@ html #header-global .nav-box>.inner .logo {
           font-size: 10px;
           // line-height: 29px;
           line-height: 1;
+          margin-top: 0;
         }
       }
       .frame-content {
@@ -237,6 +186,9 @@ html #header-global .nav-box>.inner .logo {
           padding: 5px !important;
           font-family: $font;
           font-size: 12px;
+          .small-text-field-value-component__label {
+            display: none;
+          }
         }
         .relationship-badge-component__details_group {
           padding: 0 8px;
@@ -278,24 +230,6 @@ html #header-global .nav-box>.inner .logo {
   }
 }
 
-// li.progress-field {
-//   .progress-wrapper {
-//     .zero-percent-fix,
-//     .ui-slider-range,
-//     .ui-slider-handle {
-//       background-color: $brand-color !important;
-//     }
-//   }
-// }
-
-// .progress-field-value-component__progress {
-//   background: $brand-color;
-// }
-
-// .items-section .body .content-row>ul>li.progress-field .progress-wrapper .progress .ui-slider-handle {
-//   background-color: $brand-color !important;
-// }
-
 .tasks-list {
   font-size: 11px;
   font-weight: bold;
@@ -323,7 +257,6 @@ html #header-global .nav-box>.inner .logo {
   text-transform: uppercase!important;
 }
 
-
 .header-sub-title, .header-title, .sub-navigation .tabs ul>li h5 {
   font-family: $font !important;
   font-size: 12px !important;
@@ -335,6 +268,31 @@ html #header-global .nav-box>.inner .logo {
   padding: 10px 0 !important;
   width: auto !important;
   border-bottom: 1px solid rgba(0,0,0,0.03) !important;
+}
+.markdown table {
+  thead {
+    tr {
+      th {
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+        font-size: 10px !important;
+        text-transform: uppercase !important;
+        font-weight: bold !important;
+      }
+    }
+  }
+  tbody {
+    tr {
+      td {
+        padding: 2.5px 0;
+      }
+    }
+  }
+}
+.markdown hr {
+  border: none;
+  margin: 5px 0;
+  border-bottom: 1px solid #e9e9e9;
 }
 
 /*------------------------------------*\
@@ -385,55 +343,114 @@ td.fc-widget-header thead {
 }
 
 /* Card Component */
-.apps .card-component .app-card-header {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-  font-size: 11px;
-  border-bottom: 1px solid #e9e9e9;
-  margin-bottom: 10px;
-  padding: 10px;
+.apps .card-component {
+  .app-card-header {
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e9e9e9;
+    margin-bottom: 10px;
+    padding: 10px;
+    div {
+      font-size: 11px;
+    }
+    .small-text-field-value-component__label {
+      display: none;
+    }
+  }
+  .app-card-content {
+    text-align: left !important;
+    font-size: 12px !important;
+    border-bottom: 1px solid #e9e9e9;
+    padding-bottom: 10px;
+    .large-text-field-value-component {
+      width: 100%;
+    }
+    .small-text-field-value-component {
+      padding: 0 10px;
+      p {
+        text-align: left;
+        font-size: 12px;
+        line-height: 1.5;
+        max-height: none;
+        -webkit-line-clamp: 3;
+      }
+    }
+    .calculation-field-value-component {
+      width: 100%;
+      .small-text-field-value-component {
+        padding: 0 10px;
+        white-space: normal;
+        width: 100%;
+        p {
+          text-align: left;
+          font-size: 12px;
+          line-height: 1.5;
+          max-height: none;
+          -webkit-line-clamp: 3;
+        }
+        .small-text-field-value-component__label {
+          display: none;
+        }
+      }
+    }
+  }
+  > section {
+    padding: 8px 10px;
+  }
 }
-.apps .card-component .app-card-header div {
-  font-size: 11px;
-}
-.small-text-field-value-component__label {
-  display: none;
-}
-.card-component .app-card-content .small-text-field-value-component p {
-  text-align: left;
-  font-size: 12px;
-}
+
+// .small-text-field-value-component__label {
+//   display: none;
+// }
 
 /*------------------------------------*\
   Badge View
 \*------------------------------------*/
 
 /* Badge Header */
-.apps .badge-component .app-badge-header {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-  font-weight: 600;
-  padding: 10px;
+.apps .badge-component {
+  .app-badge-header {
+    padding: 10px;
+
+    div {
+      font-family: $font;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+    .calculation-field-value-component {
+      .small-text-field-value-component {
+        .small-text-field-value-component__label {
+          display: none;
+        }
+      }
+    }
+  }
+  .app-badge-content {
+    height: 100px;
+    align-items: flex-start;
+    .calculation-field-value-component {
+      width: 100%;
+      .small-text-field-value-component {
+        padding: 10px;
+        white-space: normal;
+        width: 100%;
+        p {
+          text-align: left;
+          font-size: 12px;
+          line-height: 1.5;
+          max-height: none;
+          -webkit-line-clamp: 3;
+          padding: 0;
+        }
+        .small-text-field-value-component__label {
+          display: none;
+        }
+      }
+    }
+  }
 }
-/* Badge Content */
-.apps .badge-component .app-badge-content {
-  height: 100px;
-}
-/*.apps .badge-component .app-badge-content:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 25px;
-  background: linear-gradient(to bottom,rgba(246,246,246,0) 0,#f6f6f6 100%);
-}*/
-/*.apps .small-text-field-value-component__content p {
-  text-align: left;
-  padding: 10px;
-  height: 100px;
-  max-height: none;
-  margin: 10px;
-  padding: 0;
-}*/
+
 .apps .large-text-field-value-component {
   padding: 10px;
   height: 100px;
@@ -443,4 +460,5 @@ td.fc-widget-header thead {
 }
 .apps .plain-field-value-component .empty-field {
   text-align: left;
+  font-size: 12px;
 }
