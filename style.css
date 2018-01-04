@@ -196,6 +196,9 @@ html #header-global .nav-box > .inner .logo {
 .fc-time {
   display: none !important; }
 
+.fc-time.fc-axis {
+  display: block !important; }
+
 .fc-title {
   font-weight: normal !important; }
 

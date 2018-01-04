@@ -4,7 +4,7 @@
   "name": "Podio for Local Tobacco",
   "short_name": "Local Podio",
   "description": "This extension customizes Podio experience in Local Tobacco",
-  "version": "1.4",
+  "version": "1.5",
 
   "icons": { "16": "icons/icon16.png",
              "48": "icons/icon48.png",
