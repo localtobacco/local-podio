@@ -298,12 +298,12 @@ html #header-global .nav-box>.inner .logo {
 /*------------------------------------*\
   Calendar View
 \*------------------------------------*/
-.fc-time {
+.fc-month-view .fc-time {
   display: none!important;
 }
-.fc-time.fc-axis {
-  display: block!important;
-}
+// .fc-time.fc-axis {
+//   display: block!important;
+// }
 .fc-title {
   font-weight: normal!important;
 }
