@@ -1,322 +1,481 @@
-/*------------------------------------*\
-  General
+/*------------------------------------*General
 \*------------------------------------*/
+
 html {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif !important;
-  font-size: 14px; }
+  font-size: 14px;
+}
 
 html #header-global .nav-box > .inner .logo {
-  width: 132px !important; }
-  html #header-global .nav-box > .inner .logo .logo-img {
-    top: 47% !important;
-    display: none; }
+  width: 132px !important;
+}
 
-/*------------------------------------*\
-  Sidebar
+html #header-global .nav-box > .inner .logo .logo-img {
+  top: 47% !important;
+  display: none;
+}
+
+/*------------------------------------*Sidebar
 \*------------------------------------*/
+
 .app-view-component .app-views-list__name {
   font-weight: bold !important;
   text-transform: uppercase;
-  font-size: 11px !important; }
+  font-size: 11px !important;
+}
 
 .app-breakdown-component__link {
-  padding: 4px 0 3px !important; }
+  padding: 4px 0 3px !important;
+}
 
 .app-breakdown-component__name {
-  font-size: 12px !important; }
+  font-size: 12px !important;
+}
 
 .app-breakdown-component__item .img--avatar {
   margin: 0 10px 0 0 !important;
   height: 16px !important;
   width: 16px !important;
-  flex: 0 1 16px !important; }
+  -webkit-box-flex: 0 !important;
+      -ms-flex: 0 1 16px !important;
+          flex: 0 1 16px !important;
+}
 
-.app-breakdown-component__item .app-breakdown-component__link:focus, .app-breakdown-component__item.is-selected:last-child > .app-breakdown-component__link, .app-breakdown-component__item.is-selected > .app-breakdown-component__link {
+.app-breakdown-component__item .app-breakdown-component__link:focus,
+.app-breakdown-component__item.is-selected:last-child > .app-breakdown-component__link,
+.app-breakdown-component__item.is-selected > .app-breakdown-component__link {
   padding: 4px 25px 3px !important;
-  margin: -1px 0 0; }
+  margin: -1px 0 0;
+}
 
-/*------------------------------------*\
-  Item View
+/*------------------------------------*Item View
 \*------------------------------------*/
+
 .items-section .content-row li .frame-label {
   padding-top: 10px !important;
-  padding-bottom: 10px !important; }
-  .items-section .content-row li .frame-label .label-content {
-    text-transform: uppercase;
-    font-size: 10px;
-    line-height: 1.2;
-    margin-top: 9px; }
+  padding-bottom: 10px !important;
+}
+
+.items-section .content-row li .frame-label .label-content {
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 1.2;
+  margin-top: 9px;
+}
+
 .items-section .content-row li .frame-content {
   padding-top: 10px !important;
-  padding-bottom: 10px !important; }
+  padding-bottom: 10px !important;
+}
+
 .items-section .content-row li[id*="field"] {
   margin-top: 10px !important;
   background-color: #777 !important;
   line-height: 1 !important;
-  font-size: 12px !important; }
-  .items-section .content-row li[id*="field"] .frame-label {
-    background-color: #777 !important;
-    color: #777 !important;
-    border: none !important; }
-    .items-section .content-row li[id*="field"] .frame-label .label-content {
-      text-transform: uppercase;
-      font-size: 10px;
-      line-height: 1;
-      margin-top: 0; }
-  .items-section .content-row li[id*="field"] .frame-content h1, .items-section .content-row li[id*="field"] .frame-content h2 {
-    color: #ffffff !important;
-    margin-bottom: 0 !important;
-    letter-spacing: 0.25px !important;
-    text-transform: uppercase !important;
-    font-size: 11px !important; }
-  .items-section .content-row li[id*="field"] .frame-content hr {
-    display: none !important; }
-  .items-section .content-row li[id*="field"] .frame-content .value {
-    padding: 0 5px !important; }
+  font-size: 12px !important;
+}
+
+.items-section .content-row li[id*="field"] .frame-label {
+  background-color: #777 !important;
+  color: #777 !important;
+  border: none !important;
+}
+
+.items-section .content-row li[id*="field"] .frame-label .label-content {
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 1;
+  margin-top: 0;
+}
+
+.items-section .content-row li[id*="field"] .frame-content h1,
+.items-section .content-row li[id*="field"] .frame-content h2 {
+  color: #ffffff !important;
+  margin-bottom: 0 !important;
+  letter-spacing: 0.25px !important;
+  text-transform: uppercase !important;
+  font-size: 11px !important;
+}
+
+.items-section .content-row li[id*="field"] .frame-content hr {
+  display: none !important;
+}
+
+.items-section .content-row li[id*="field"] .frame-content .value {
+  padding: 0 5px !important;
+}
+
 .items-section .content-row li.category-field .value li {
   padding: 5px 10px !important;
   font-size: 10px !important;
   font-weight: bold !important;
-  text-transform: uppercase !important; }
+  text-transform: uppercase !important;
+}
+
 .items-section .content-row li.category-field .frame-content {
-  padding-bottom: 2px !important; }
+  padding-bottom: 2px !important;
+}
+
 .items-section .content-row li.date-field .frame-label .label-content {
-  padding-top: 0 !important; }
+  padding-top: 0 !important;
+}
+
 .items-section .content-row li.date-field .value {
-  padding: 0 !important; }
-  .items-section .content-row li.date-field .value .field-date-display {
-    padding: 0 !important; }
-    .items-section .content-row li.date-field .value .field-date-display .datetime .badge, .items-section .content-row li.date-field .value .field-date-display .datetime .month, .items-section .content-row li.date-field .value .field-date-display .datetime .sep {
-      line-height: 30px;
-      height: 30px; }
-    .items-section .content-row li.date-field .value .field-date-display .datetime .badge .weekday {
-      font-size: 10px;
-      text-transform: uppercase;
-      font-weight: bold; }
-    .items-section .content-row li.date-field .value .field-date-display .datetime .badge .day {
-      font-size: 16px;
-      font-weight: bold; }
-  .items-section .content-row li.date-field .value .blank-placeholder {
-    line-height: 30px !important; }
+  padding: 0 !important;
+}
+
+.items-section .content-row li.date-field .value .field-date-display {
+  padding: 0 !important;
+}
+
+.items-section .content-row li.date-field .value .field-date-display .datetime .badge,
+.items-section .content-row li.date-field .value .field-date-display .datetime .month,
+.items-section .content-row li.date-field .value .field-date-display .datetime .sep {
+  line-height: 30px;
+  height: 30px;
+}
+
+.items-section .content-row li.date-field .value .field-date-display .datetime .badge .weekday {
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.items-section .content-row li.date-field .value .field-date-display .datetime .badge .day {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.items-section .content-row li.date-field .value .blank-placeholder {
+  line-height: 30px !important;
+}
+
+.items-section .content-row li.text-field p {
+  margin-bottom: 5px !important;
+}
+
 .items-section .content-row li.contact-field .contact-list .contact-card .image-block .img {
-  padding: 3px 0 3px 5px; }
-  .items-section .content-row li.contact-field .contact-list .contact-card .image-block .img img {
-    height: 30px;
-    width: 30px;
-    margin: 0; }
+  padding: 3px 0 3px 5px;
+}
+
+.items-section .content-row li.contact-field .contact-list .contact-card .image-block .img img {
+  height: 30px;
+  width: 30px;
+  margin: 0;
+}
+
 .items-section .content-row li.contact-field .contact-list .contact-card .image-block .arrow {
-  height: 36px; }
-  .items-section .content-row li.contact-field .contact-list .contact-card .image-block .arrow .arrow-icon {
-    margin-top: 10px; }
+  height: 36px;
+}
+
+.items-section .content-row li.contact-field .contact-list .contact-card .image-block .arrow .arrow-icon {
+  margin-top: 10px;
+}
+
 .items-section .content-row li.contact-field .contact-list .contact-card .image-block .details {
-  height: auto; }
-  .items-section .content-row li.contact-field .contact-list .contact-card .image-block .details h4 {
-    font-size: 11px;
-    margin-bottom: 0; }
-  .items-section .content-row li.contact-field .contact-list .contact-card .image-block .details .secondary {
-    display: none; }
+  height: auto;
+}
+
+.items-section .content-row li.contact-field .contact-list .contact-card .image-block .details h4 {
+  font-size: 11px;
+  margin-bottom: 0;
+}
+
+.items-section .content-row li.contact-field .contact-list .contact-card .image-block .details .secondary {
+  display: none;
+}
+
 .items-section .content-row li.app-field .relationship-badge-component .relationship-badge-component__title {
   padding: 5px !important;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif !important;
-  font-size: 12px; }
-  .items-section .content-row li.app-field .relationship-badge-component .relationship-badge-component__title .small-text-field-value-component__label {
-    display: none; }
+  font-size: 12px;
+}
+
+.items-section .content-row li.app-field .relationship-badge-component .relationship-badge-component__title .small-text-field-value-component__label {
+  display: none;
+}
+
 .items-section .content-row li.app-field .relationship-badge-component .relationship-badge-component__details_group {
   padding: 0 8px;
-  margin-top: 5px; }
+  margin-top: 5px;
+}
+
 .items-section .content-row .files-list .file-field-group-component {
-  margin-bottom: 10px; }
-  .items-section .content-row .files-list .file-field-group-component .file-field-group-component__title {
-    margin-bottom: 10px;
-    font-size: 10px;
-    text-transform: uppercase;
-    font-weight: bold; }
+  margin-bottom: 10px;
+}
+
+.items-section .content-row .files-list .file-field-group-component .file-field-group-component__title {
+  margin-bottom: 10px;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .items-section .content-row .files-list .file-field-list-component__file {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+}
+
 .items-section .content-row .files-list .file-field-item-component__title {
   font-size: 12px !important;
-  line-height: 1; }
+  line-height: 1;
+}
+
 .items-section .content-row .files-list .file-field-item-component__details {
   font-size: 12px;
   line-height: 1;
-  margin-bottom: 6px; }
+  margin-bottom: 6px;
+}
+
 .items-section .content-row .files-list .file-field-item-component__actions {
   font-size: 12px;
-  line-height: 1; }
+  line-height: 1;
+}
+
 .items-section .content-row .files-list .file-field-item-component__thumbnail {
   height: 50px !important;
-  width: 50px !important; }
+  width: 50px !important;
+}
 
 .tasks-list {
   font-size: 11px;
-  font-weight: bold; }
-  .tasks-list .task-list li {
-    height: 40px !important;
-    line-height: 40px !important; }
-    .tasks-list .task-list li .inner {
-      height: 40px !important; }
-      .tasks-list .task-list li .inner .avatar img {
-        height: 24px !important;
-        width: 24px !important; }
+  font-weight: bold;
+}
+
+.tasks-list .task-list li {
+  height: 40px !important;
+  line-height: 40px !important;
+}
+
+.tasks-list .task-list li .inner {
+  height: 40px !important;
+}
+
+.tasks-list .task-list li .inner .avatar img {
+  height: 24px !important;
+  width: 24px !important;
+}
 
 .category-field-value-component > div {
   font-weight: bold !important;
   font-size: 10px !important;
-  text-transform: uppercase !important; }
+  text-transform: uppercase !important;
+}
 
-.header-sub-title, .header-title, .sub-navigation .tabs ul > li h5 {
+.header-sub-title,
+.header-title,
+.sub-navigation .tabs ul > li h5 {
   font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif !important !important;
   font-size: 12px !important;
   text-transform: uppercase !important;
-  font-weight: bold !important; }
+  font-weight: bold !important;
+}
 
 .activity-groups-compact .activity-group {
   margin: 0 20px !important;
   padding: 10px 0 !important;
   width: auto !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.03) !important; }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.03) !important;
+}
 
 .markdown table thead tr th {
   padding-bottom: 5px;
   margin-bottom: 5px;
   font-size: 10px !important;
   text-transform: uppercase !important;
-  font-weight: bold !important; }
+  font-weight: bold !important;
+}
+
 .markdown table tbody tr td {
-  padding: 2.5px 0; }
+  padding: 2.5px 0;
+}
 
 .markdown hr {
   border: none;
   margin: 5px 0;
-  border-bottom: 1px solid #e9e9e9; }
+  border-bottom: 1px solid #e9e9e9;
+}
 
-/*------------------------------------*\
-  Calendar View
+/*------------------------------------*Calendar View
 \*------------------------------------*/
+
 .fc-month-view .fc-time {
-  display: none !important; }
+  display: none !important;
+}
 
 .fc-title {
-  font-weight: normal !important; }
+  font-weight: normal !important;
+}
 
 .fullcalendar-header .left h2 {
   vertical-align: baseline !important;
   font-weight: bold;
   font-size: 14px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 td.fc-widget-header thead th {
   text-transform: uppercase;
   font-size: 10px;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 td.fc-widget-header thead {
   height: 25px;
-  line-height: 25px; }
+  line-height: 25px;
+}
 
 .fc-basic-view td.fc-day-number {
   font-size: 9px !important;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif !important;
   line-height: 1;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
-/*------------------------------------*\
-  Card View
+/*------------------------------------*Card View
 \*------------------------------------*/
+
 /* Column Header */
+
 .items-card > .scrollable .floating .floating-scrollable .inner > div {
   text-transform: uppercase;
-  font-size: 11px !important; }
+  font-size: 11px !important;
+}
 
 /* Row Header */
+
 .items-card > .scrollable > table > tbody .card-group-heading {
   font-size: 11px !important;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
 
 /* Card Component */
+
 .apps .card-component .app-card-header {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
   text-transform: uppercase;
   border-bottom: 1px solid #e9e9e9;
   margin-bottom: 10px;
-  padding: 10px; }
-  .apps .card-component .app-card-header div {
-    font-size: 11px; }
-  .apps .card-component .app-card-header .small-text-field-value-component__label {
-    display: none; }
+  padding: 10px;
+}
+
+.apps .card-component .app-card-header div {
+  font-size: 11px;
+}
+
+.apps .card-component .app-card-header .small-text-field-value-component__label {
+  display: none;
+}
+
 .apps .card-component .app-card-content {
   text-align: left !important;
   font-size: 12px !important;
   border-bottom: 1px solid #e9e9e9;
-  padding-bottom: 10px; }
-  .apps .card-component .app-card-content .large-text-field-value-component {
-    width: 100%; }
-  .apps .card-component .app-card-content .small-text-field-value-component {
-    padding: 0 10px; }
-    .apps .card-component .app-card-content .small-text-field-value-component p {
-      text-align: left;
-      font-size: 12px;
-      line-height: 1.5;
-      max-height: none;
-      -webkit-line-clamp: 3; }
-  .apps .card-component .app-card-content .calculation-field-value-component {
-    width: 100%; }
-    .apps .card-component .app-card-content .calculation-field-value-component .small-text-field-value-component {
-      padding: 0 10px;
-      white-space: normal;
-      width: 100%; }
-      .apps .card-component .app-card-content .calculation-field-value-component .small-text-field-value-component p {
-        text-align: left;
-        font-size: 12px;
-        line-height: 1.5;
-        max-height: none;
-        -webkit-line-clamp: 3; }
-      .apps .card-component .app-card-content .calculation-field-value-component .small-text-field-value-component .small-text-field-value-component__label {
-        display: none; }
-.apps .card-component > section {
-  padding: 8px 10px; }
+  padding-bottom: 10px;
+}
 
-/*------------------------------------*\
-  Badge View
+.apps .card-component .app-card-content .large-text-field-value-component {
+  width: 100%;
+}
+
+.apps .card-component .app-card-content .small-text-field-value-component {
+  padding: 0 10px;
+}
+
+.apps .card-component .app-card-content .small-text-field-value-component p {
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.5;
+  max-height: none;
+  -webkit-line-clamp: 3;
+}
+
+.apps .card-component .app-card-content .calculation-field-value-component {
+  width: 100%;
+}
+
+.apps .card-component .app-card-content .calculation-field-value-component .small-text-field-value-component {
+  padding: 0 10px;
+  white-space: normal;
+  width: 100%;
+}
+
+.apps .card-component .app-card-content .calculation-field-value-component .small-text-field-value-component p {
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.5;
+  max-height: none;
+  -webkit-line-clamp: 3;
+}
+
+.apps .card-component .app-card-content .calculation-field-value-component .small-text-field-value-component .small-text-field-value-component__label {
+  display: none;
+}
+
+.apps .card-component > section {
+  padding: 8px 10px;
+}
+
+/*------------------------------------*Badge View
 \*------------------------------------*/
+
 /* Badge Header */
+
 .apps .badge-component .app-badge-header {
-  padding: 10px; }
-  .apps .badge-component .app-badge-header div {
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif !important;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 12px; }
-  .apps .badge-component .app-badge-header .calculation-field-value-component .small-text-field-value-component .small-text-field-value-component__label {
-    display: none; }
+  padding: 10px;
+}
+
+.apps .badge-component .app-badge-header div {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.apps .badge-component .app-badge-header .calculation-field-value-component .small-text-field-value-component .small-text-field-value-component__label {
+  display: none;
+}
+
 .apps .badge-component .app-badge-content {
   height: 100px;
-  align-items: flex-start; }
-  .apps .badge-component .app-badge-content .calculation-field-value-component {
-    width: 100%; }
-    .apps .badge-component .app-badge-content .calculation-field-value-component .small-text-field-value-component {
-      padding: 10px;
-      white-space: normal;
-      width: 100%; }
-      .apps .badge-component .app-badge-content .calculation-field-value-component .small-text-field-value-component p {
-        text-align: left;
-        font-size: 12px;
-        line-height: 1.5;
-        max-height: none;
-        -webkit-line-clamp: 3;
-        padding: 0; }
-      .apps .badge-component .app-badge-content .calculation-field-value-component .small-text-field-value-component .small-text-field-value-component__label {
-        display: none; }
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.apps .badge-component .app-badge-content .calculation-field-value-component {
+  width: 100%;
+}
+
+.apps .badge-component .app-badge-content .calculation-field-value-component .small-text-field-value-component {
+  padding: 10px;
+  white-space: normal;
+  width: 100%;
+}
+
+.apps .badge-component .app-badge-content .calculation-field-value-component .small-text-field-value-component p {
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.5;
+  max-height: none;
+  -webkit-line-clamp: 3;
+  padding: 0;
+}
+
+.apps .badge-component .app-badge-content .calculation-field-value-component .small-text-field-value-component .small-text-field-value-component__label {
+  display: none;
+}
 
 .apps .large-text-field-value-component {
   padding: 10px;
-  height: 100px; }
+  height: 100px;
+}
 
 .apps .badge-component > section {
-  padding: 10px; }
+  padding: 10px;
+}
 
 .apps .plain-field-value-component .empty-field {
   text-align: left;
-  font-size: 12px; }
+  font-size: 12px;
+}
 
-/*# sourceMappingURL=style.css.map */

@@ -6,462 +6,462 @@ $darker: #333;
 $dark: #444;
 
 /*------------------------------------*\
-  General
+General
 \*------------------------------------*/
 html {
-  font-family: $font;
-  font-size: 14px;
+    font-family: $font;
+    font-size: 14px;
 }
 
 html #header-global .nav-box>.inner .logo {
-  width: 132px !important;
-  .logo-img {
-    top: 47% !important;
-    display: none;
-  }
+    width: 132px !important;
+    .logo-img {
+        top: 47% !important;
+        display: none;
+    }
 }
 
 /*------------------------------------*\
-  Sidebar
+Sidebar
 \*------------------------------------*/
 .app-view-component .app-views-list__name {
-  font-weight: bold !important;
-  text-transform: uppercase;
-  font-size: 11px !important;
+    font-weight: bold !important;
+    text-transform: uppercase;
+    font-size: 11px !important;
 }
 .app-breakdown-component__link {
-  padding: 4px 0 3px !important;
+    padding: 4px 0 3px !important;
 }
 .app-breakdown-component__name {
-  font-size: 12px !important;
+    font-size: 12px !important;
 }
 .app-breakdown-component__item .img--avatar {
-  margin: 0 10px 0 0 !important;
-  height: 16px !important;
-  width: 16px !important;
-  flex: 0 1 16px !important;
+    margin: 0 10px 0 0 !important;
+    height: 16px !important;
+    width: 16px !important;
+    flex: 0 1 16px !important;
 }
 .app-breakdown-component__item .app-breakdown-component__link:focus, .app-breakdown-component__item.is-selected:last-child>.app-breakdown-component__link, .app-breakdown-component__item.is-selected>.app-breakdown-component__link {
-  padding: 4px 25px 3px !important;
-  margin: -1px 0 0;
+    padding: 4px 25px 3px !important;
+    margin: -1px 0 0;
 }
 
 /*------------------------------------*\
-  Item View
+Item View
 \*------------------------------------*/
-
 .items-section {
-  .content-row {
-    li {
-      .frame-label {
-        padding-top: 10px!important;
-        padding-bottom: 10px!important;
-        .label-content {
-          text-transform: uppercase;
-          font-size: 10px;
-          line-height: 1.2;
-          margin-top: 9px;
-        }
-      }
-      .frame-content {
-        padding-top: 10px!important;
-        padding-bottom: 10px!important;
-      }
-    }
-    li[id*="field"] {
-      margin-top: 10px!important;
-      background-color: #777!important;
-      line-height: 1!important;
-      font-size: 12px!important;
-      .frame-label {
-        background-color: #777!important;
-        color: #777!important;
-        border: none!important;
-        .label-content {
-          text-transform: uppercase;
-          font-size: 10px;
-          // line-height: 29px;
-          line-height: 1;
-          margin-top: 0;
-        }
-      }
-      .frame-content {
-        h1,h2 {
-          color: #ffffff!important;
-          margin-bottom: 0!important;
-          letter-spacing: .25px!important;
-          text-transform: uppercase!important;
-          font-size: 11px!important;
-        }
-        hr {
-          display: none!important;
-        }
-        .value {
-          padding: 0 5px !important;
-        }
-      }
-    }
-    // Category Field
-    li.category-field {
-      .value li {
-        padding: 5px 10px!important;
-        font-size: 10px!important;
-        font-weight: bold!important;
-        text-transform: uppercase!important;
-        // margin-bottom: 0 !important;
-      }
-      .frame-content {
-        padding-bottom: 2px !important;
-      }
-    }
-    // Date Field
-    li.date-field {
-      .frame-label .label-content {
-        padding-top: 0 !important;
-      }
-      .value {
-        padding: 0 !important;
-        .field-date-display {
-          padding: 0 !important;
-          .datetime {
-            .badge, .month, .sep {
-              line-height: 30px;
-              height: 30px;
+    .content-row {
+        li {
+            .frame-label {
+                padding-top: 10px!important;
+                padding-bottom: 10px!important;
+                .label-content {
+                    text-transform: uppercase;
+                    font-size: 10px;
+                    line-height: 1.2;
+                    margin-top: 9px;
+                }
             }
-            .badge {
-              .weekday {
-                font-size: 10px;
-                text-transform: uppercase;
-                font-weight: bold;
-              }
-              .day {
-                font-size: 16px;
-                font-weight: bold;
-              }
+            .frame-content {
+                padding-top: 10px!important;
+                padding-bottom: 10px!important;
             }
-          }
         }
-        .blank-placeholder {
-          line-height: 30px !important;
-        }
-      }
-    }
-    // Contact Field
-    li.contact-field {
-      .contact-list {
-        .contact-card {
-          .image-block {
-            .img {
-              padding: 3px 0 3px 5px;
-              img {
-                height: 30px;
-                width: 30px;
-                margin: 0;
-              }
+        li[id*="field"] {
+            margin-top: 10px!important;
+            background-color: #777!important;
+            line-height: 1!important;
+            font-size: 12px!important;
+            .frame-label {
+                background-color: #777!important;
+                color: #777!important;
+                border: none!important;
+                .label-content {
+                    text-transform: uppercase;
+                    font-size: 10px;
+                    // line-height: 29px;
+                    line-height: 1;
+                    margin-top: 0;
+                }
             }
-            .arrow {
-              height: 36px;
-              .arrow-icon {
-                margin-top: 10px;
-              }
+            .frame-content {
+                h1,h2 {
+                    color: #ffffff!important;
+                    margin-bottom: 0!important;
+                    letter-spacing: .25px!important;
+                    text-transform: uppercase!important;
+                    font-size: 11px!important;
+                }
+                hr {
+                    display: none!important;
+                }
+                .value {
+                    padding: 0 5px !important;
+                }
             }
-            .details {
-              height: auto;
-              h4 {
-                font-size: 11px;
-                margin-bottom: 0;
-              }
-              .secondary {
-                display: none;
-              }
+        }
+        // Category Field
+        li.category-field {
+            .value li {
+                padding: 5px 10px!important;
+                font-size: 10px!important;
+                font-weight: bold!important;
+                text-transform: uppercase!important;
+                // margin-bottom: 0 !important;
             }
-          }
+            .frame-content {
+                padding-bottom: 2px !important;
+            }
         }
-      }
+        // Date Field
+        li.date-field {
+            .frame-label .label-content {
+                padding-top: 0 !important;
+            }
+            .value {
+                padding: 0 !important;
+                .field-date-display {
+                    padding: 0 !important;
+                    .datetime {
+                        .badge, .month, .sep {
+                            line-height: 30px;
+                            height: 30px;
+                        }
+                        .badge {
+                            .weekday {
+                                font-size: 10px;
+                                text-transform: uppercase;
+                                font-weight: bold;
+                            }
+                            .day {
+                                font-size: 16px;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+                }
+                .blank-placeholder {
+                    line-height: 30px !important;
+                }
+            }
+        }
+        li.text-field {
+            p {
+                margin-bottom: 5px !important;
+            }
+        }
+        // Contact Field
+        li.contact-field {
+            .contact-list {
+                .contact-card {
+                    .image-block {
+                        .img {
+                            padding: 3px 0 3px 5px;
+                            img {
+                                height: 30px;
+                                width: 30px;
+                                margin: 0;
+                            }
+                        }
+                        .arrow {
+                            height: 36px;
+                            .arrow-icon {
+                                margin-top: 10px;
+                            }
+                        }
+                        .details {
+                            height: auto;
+                            h4 {
+                                font-size: 11px;
+                                margin-bottom: 0;
+                            }
+                            .secondary {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        // Relationship Field
+        li.app-field {
+            .relationship-badge-component {
+                .relationship-badge-component__title {
+                    padding: 5px !important;
+                    font-family: $font;
+                    font-size: 12px;
+                    .small-text-field-value-component__label {
+                        display: none;
+                    }
+                }
+                .relationship-badge-component__details_group {
+                    padding: 0 8px;
+                    margin-top: 5px;
+                }
+            }
+        }
+        .files-list {
+            .file-field-group-component {
+                margin-bottom: 10px;
+                .file-field-group-component__title {
+                    margin-bottom: 10px;
+                    font-size: 10px;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+            .file-field-list-component__file {
+                margin-bottom: 10px;
+            }
+            .file-field-item-component__title {
+                font-size: 12px !important;
+                line-height: 1;
+            }
+            .file-field-item-component__details {
+                font-size: 12px;
+                line-height: 1;
+                margin-bottom: 6px;
+            }
+            .file-field-item-component__actions {
+                font-size: 12px;
+                line-height: 1;
+            }
+            .file-field-item-component__thumbnail {
+                height: 50px !important;
+                width: 50px !important;
+            }
+        }
     }
-    // Relationship Field
-    li.app-field {
-      .relationship-badge-component {
-        .relationship-badge-component__title {
-          padding: 5px !important;
-          font-family: $font;
-          font-size: 12px;
-          .small-text-field-value-component__label {
-            display: none;
-          }
-        }
-        .relationship-badge-component__details_group {
-          padding: 0 8px;
-          margin-top: 5px;
-        }
-      }
-    }
-    .files-list {
-      .file-field-group-component {
-        margin-bottom: 10px;
-        .file-field-group-component__title {
-          margin-bottom: 10px;
-          font-size: 10px;
-          text-transform: uppercase;
-          font-weight: bold;
-        }
-      }
-      .file-field-list-component__file {
-        margin-bottom: 10px;
-      }
-      .file-field-item-component__title {
-        font-size: 12px !important;
-        line-height: 1;
-      }
-      .file-field-item-component__details {
-        font-size: 12px;
-        line-height: 1;
-        margin-bottom: 6px;
-      }
-      .file-field-item-component__actions {
-        font-size: 12px;
-        line-height: 1;
-      }
-      .file-field-item-component__thumbnail {
-        height: 50px !important;
-        width: 50px !important;
-      }
-    }
-  }
 }
 
 .tasks-list {
-  font-size: 11px;
-  font-weight: bold;
-  .task-list {
-    li {
-      height: 40px !important;
-      line-height: 40px !important;
-      .inner {
-        height: 40px !important;
-        .space-right {}
-        .avatar {
-          img {
-            height: 24px !important;
-            width: 24px !important;
-          }
+    font-size: 11px;
+    font-weight: bold;
+    .task-list {
+        li {
+            height: 40px !important;
+            line-height: 40px !important;
+            .inner {
+                height: 40px !important;
+                .space-right {}
+                .avatar {
+                    img {
+                        height: 24px !important;
+                        width: 24px !important;
+                    }
+                }
+            }
         }
-      }
     }
-  }
 }
 
 .category-field-value-component>div {
-  font-weight: bold!important;
-  font-size: 10px!important;
-  text-transform: uppercase!important;
+    font-weight: bold!important;
+    font-size: 10px!important;
+    text-transform: uppercase!important;
 }
 
 .header-sub-title, .header-title, .sub-navigation .tabs ul>li h5 {
-  font-family: $font !important;
-  font-size: 12px !important;
-  text-transform: uppercase !important;
-  font-weight: bold !important;
+    font-family: $font !important;
+    font-size: 12px !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important;
 }
 .activity-groups-compact .activity-group {
-  margin: 0 20px !important;
-  padding: 10px 0 !important;
-  width: auto !important;
-  border-bottom: 1px solid rgba(0,0,0,0.03) !important;
+    margin: 0 20px !important;
+    padding: 10px 0 !important;
+    width: auto !important;
+    border-bottom: 1px solid rgba(0,0,0,0.03) !important;
 }
 .markdown table {
-  thead {
-    tr {
-      th {
-        padding-bottom: 5px;
-        margin-bottom: 5px;
-        font-size: 10px !important;
-        text-transform: uppercase !important;
-        font-weight: bold !important;
-      }
+    thead {
+        tr {
+            th {
+                padding-bottom: 5px;
+                margin-bottom: 5px;
+                font-size: 10px !important;
+                text-transform: uppercase !important;
+                font-weight: bold !important;
+            }
+        }
     }
-  }
-  tbody {
-    tr {
-      td {
-        padding: 2.5px 0;
-      }
+    tbody {
+        tr {
+            td {
+                padding: 2.5px 0;
+            }
+        }
     }
-  }
 }
 .markdown hr {
-  border: none;
-  margin: 5px 0;
-  border-bottom: 1px solid #e9e9e9;
+    border: none;
+    margin: 5px 0;
+    border-bottom: 1px solid #e9e9e9;
 }
 
 /*------------------------------------*\
-  Calendar View
+Calendar View
 \*------------------------------------*/
 .fc-month-view .fc-time {
-  display: none!important;
+    display: none!important;
 }
-// .fc-time.fc-axis {
-//   display: block!important;
-// }
+// .fc-time.fc-axis { display: block!important;}
 .fc-title {
-  font-weight: normal!important;
+    font-weight: normal!important;
 }
 .fullcalendar-header .left h2 {
-  vertical-align: baseline !important;
-  font-weight: bold;
-  font-size: 14px;
-  text-transform: uppercase;
+    vertical-align: baseline !important;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
 }
 td.fc-widget-header thead th {
-  text-transform: uppercase;
-  font-size: 10px;
-  font-weight: bold ;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold ;
 }
 td.fc-widget-header thead {
-  height: 25px;
-  line-height: 25px;
+    height: 25px;
+    line-height: 25px;
 }
 .fc-basic-view td.fc-day-number {
-  font-size: 9px !important;
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif!important;
-  line-height: 1;
-  font-weight: bold;
+    font-size: 9px !important;
+    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif!important;
+    line-height: 1;
+    font-weight: bold;
 }
 
 /*------------------------------------*\
-  Card View
+Card View
 \*------------------------------------*/
 
 /* Column Header */
 .items-card>.scrollable .floating .floating-scrollable .inner>div {
-  text-transform: uppercase;
-  font-size: 11px !important;
+    text-transform: uppercase;
+    font-size: 11px !important;
 }
 
 /* Row Header */
 .items-card>.scrollable>table>tbody .card-group-heading {
-  font-size: 11px !important;
-  text-transform: uppercase;
+    font-size: 11px !important;
+    text-transform: uppercase;
 }
 
 /* Card Component */
 .apps .card-component {
-  .app-card-header {
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-    text-transform: uppercase;
-    border-bottom: 1px solid #e9e9e9;
-    margin-bottom: 10px;
-    padding: 10px;
-    div {
-      font-size: 11px;
-    }
-    .small-text-field-value-component__label {
-      display: none;
-    }
-  }
-  .app-card-content {
-    text-align: left !important;
-    font-size: 12px !important;
-    border-bottom: 1px solid #e9e9e9;
-    padding-bottom: 10px;
-    .large-text-field-value-component {
-      width: 100%;
-    }
-    .small-text-field-value-component {
-      padding: 0 10px;
-      p {
-        text-align: left;
-        font-size: 12px;
-        line-height: 1.5;
-        max-height: none;
-        -webkit-line-clamp: 3;
-      }
-    }
-    .calculation-field-value-component {
-      width: 100%;
-      .small-text-field-value-component {
-        padding: 0 10px;
-        white-space: normal;
-        width: 100%;
-        p {
-          text-align: left;
-          font-size: 12px;
-          line-height: 1.5;
-          max-height: none;
-          -webkit-line-clamp: 3;
+    .app-card-header {
+        font-family: -apple-system,system-ui,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        text-transform: uppercase;
+        border-bottom: 1px solid #e9e9e9;
+        margin-bottom: 10px;
+        padding: 10px;
+        div {
+            font-size: 11px;
         }
         .small-text-field-value-component__label {
-          display: none;
+            display: none;
         }
-      }
     }
-  }
-  > section {
-    padding: 8px 10px;
-  }
+    .app-card-content {
+        text-align: left !important;
+        font-size: 12px !important;
+        border-bottom: 1px solid #e9e9e9;
+        padding-bottom: 10px;
+        .large-text-field-value-component {
+            width: 100%;
+        }
+        .small-text-field-value-component {
+            padding: 0 10px;
+            p {
+                text-align: left;
+                font-size: 12px;
+                line-height: 1.5;
+                max-height: none;
+                -webkit-line-clamp: 3;
+            }
+        }
+        .calculation-field-value-component {
+            width: 100%;
+            .small-text-field-value-component {
+                padding: 0 10px;
+                white-space: normal;
+                width: 100%;
+                p {
+                    text-align: left;
+                    font-size: 12px;
+                    line-height: 1.5;
+                    max-height: none;
+                    -webkit-line-clamp: 3;
+                }
+                .small-text-field-value-component__label {
+                    display: none;
+                }
+            }
+        }
+    }
+    > section {
+        padding: 8px 10px;
+    }
 }
 
-// .small-text-field-value-component__label {
-//   display: none;
-// }
+// .small-text-field-value-component__label {display: none;}
 
 /*------------------------------------*\
-  Badge View
+Badge View
 \*------------------------------------*/
 
 /* Badge Header */
 .apps .badge-component {
-  .app-badge-header {
-    padding: 10px;
-
-    div {
-      font-family: $font;
-      font-weight: 600;
-      text-transform: uppercase;
-      font-size: 12px;
-    }
-    .calculation-field-value-component {
-      .small-text-field-value-component {
-        .small-text-field-value-component__label {
-          display: none;
-        }
-      }
-    }
-  }
-  .app-badge-content {
-    height: 100px;
-    align-items: flex-start;
-    .calculation-field-value-component {
-      width: 100%;
-      .small-text-field-value-component {
+    .app-badge-header {
         padding: 10px;
-        white-space: normal;
-        width: 100%;
-        p {
-          text-align: left;
-          font-size: 12px;
-          line-height: 1.5;
-          max-height: none;
-          -webkit-line-clamp: 3;
-          padding: 0;
+
+        div {
+            font-family: $font;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 12px;
         }
-        .small-text-field-value-component__label {
-          display: none;
+        .calculation-field-value-component {
+            .small-text-field-value-component {
+                .small-text-field-value-component__label {
+                    display: none;
+                }
+            }
         }
-      }
     }
-  }
+    .app-badge-content {
+        height: 100px;
+        align-items: flex-start;
+        .calculation-field-value-component {
+            width: 100%;
+            .small-text-field-value-component {
+                padding: 10px;
+                white-space: normal;
+                width: 100%;
+                p {
+                    text-align: left;
+                    font-size: 12px;
+                    line-height: 1.5;
+                    max-height: none;
+                    -webkit-line-clamp: 3;
+                    padding: 0;
+                }
+                .small-text-field-value-component__label {
+                    display: none;
+                }
+            }
+        }
+    }
 }
 
 .apps .large-text-field-value-component {
-  padding: 10px;
-  height: 100px;
+    padding: 10px;
+    height: 100px;
 }
 .apps .badge-component>section {
-  padding: 10px;
+    padding: 10px;
 }
 .apps .plain-field-value-component .empty-field {
-  text-align: left;
-  font-size: 12px;
+    text-align: left;
+    font-size: 12px;
 }
