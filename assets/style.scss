@@ -465,3 +465,47 @@ Badge View
     text-align: left;
     font-size: 12px;
 }
+
+// @media (max-width: 992px) {
+//     .space-switcher-wrapper { width: 20% !important; }
+//     .page-width { min-width: unset !important; }
+//     .global-container { min-width: unset !important; }
+//     .grid-column-1-2 { width: 100% !important; }
+//     .grid-column-3-4 { width: 100% !important; }
+//     .grid-column-1-4 { width: 100% !important; }
+//     .gridster [data-sizex="1"] { width: 49% !important; }
+//     .gridster [data-col="2"] { left: 50% !important; }
+//     .app-view { min-width: unset !important; }
+
+//     .app-view__content {
+//         min-width: stretch !important;
+//         // min-width: -moz-available !important;
+//         // min-width: -webkit-fill-available !important;
+//     }
+
+//     .toggle-items-link {
+//         width: 32px !important;
+//         height: 54px !important;
+//     }
+
+//     .item-overlay {
+//         min-width: unset !important;
+//         padding: 0 10px !important;
+//     }
+
+//     .item-overlay-wrapper {
+//         min-width: unset !important !important;
+//     }
+
+//     .edit-template {
+//         display: none !important;
+//     }
+
+//     .gridster-block {
+//         pointer-events: none !important;
+//     }
+
+//     .gridster-widget div a {
+//         pointer-events: auto !important;
+//     }
+// }
